@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Login Simulation</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div class="container" id="login-screen">
+    <h2>Welcome Back</h2>
+
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+
+    <button onclick="login()">Login</button>
+    <div id="message" class="message"></div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="container" id="dashboard">
+    <h2>Dashboard</h2>
+    <p>You have successfully logged in 🎉</p>
+
+    <div class="nav-btns">
+        <button onclick="goToInfo()">More Info</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<!-- INFO SCREEN -->
+<div class="container" id="info-screen">
+    <h2>Information</h2>
+    <p>This is a demo multi-screen login simulation with animations and modern UI.</p>
+
+    <div class="nav-btns">
+        <button onclick="goToDashboard()">Back</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
